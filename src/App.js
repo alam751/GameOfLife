@@ -1,7 +1,8 @@
 import React, { createContext, useReducer } from "react";
 import "./App.css";
-import ContextApp from "./components/ContextApp";
-import { fillEachCell, nextGenerationArr } from "./utils";
+import AppContent from "./components/AppContent";
+import { fillEachCell, nextGenerationGrid } from "./utils";
+import GameRules from "./components/GameRules";
 
 import { reducer } from "./components/reducer";
 
@@ -9,22 +10,25 @@ export const AppContext = createContext();
 
 const initialState = {
   arr: fillEachCell(),
-  nextArr: nextGenerationArr(),
 };
 
 function App() {
   const [state, dispatch] = useReducer(reducer, initialState);
-  console.log(state);
 
   const runSimulation = () => {
-    return dispatch({ type: "RANDOM" });
+    return dispatch({ type: "RANDOM", payload: nextGenerationGrid() });
+  };
+
+  const toggleCell = (id) => {
+    return dispatch({ type: "TOGGLE", payload: id });
   };
 
   return (
     <>
-      <AppContext.Provider value={{ ...state, runSimulation }}>
-        <ContextApp />
+      <AppContext.Provider value={{ ...state, runSimulation, toggleCell }}>
+        <AppContent />
       </AppContext.Provider>
+      <GameRules />
     </>
   );
 }
