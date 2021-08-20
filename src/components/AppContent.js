@@ -50,7 +50,7 @@ const AppContent = () => {
       <div className="container">
         <div
           className="box"
-          style={{ gridTemplateColumns: `repeat(${columns1} , 20px)` }}
+          //style={{ gridTemplateColumns: `repeat(${columns1} , 20px)` }}
         >
           {arr.map((rows, rowsIndex) => {
             return rows.map((columns, columnsIndex) => {
