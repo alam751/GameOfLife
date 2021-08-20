@@ -2,8 +2,6 @@ import React, { useState, useContext, useEffect } from "react";
 import { AppContext } from "../App";
 import "../App.css";
 
-const columns1 = 30;
-
 const AppContent = () => {
   const { arr, runSimulation, toggleCell } = useContext(AppContext);
 
