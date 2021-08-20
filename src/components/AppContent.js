@@ -48,10 +48,7 @@ const AppContent = () => {
 
       <h2 className="generationCount">Generation: {count}</h2>
       <div className="container">
-        <div
-          className="box"
-          //style={{ gridTemplateColumns: `repeat(${columns1} , 20px)` }}
-        >
+        <div className="box">
           {arr.map((rows, rowsIndex) => {
             return rows.map((columns, columnsIndex) => {
               return (
