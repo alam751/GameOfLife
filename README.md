@@ -4,13 +4,15 @@
 
 > **This is a very basic app but useful to understand the React Components, Reducer, Effects, Context etc. .**
 
+> **App has start button to start the game, stop button to stop and next button for next generation only.**
+
 ## Demo
 
-![Game-app](https://user-images.githubusercontent.com/84847269/128991446-40a836d7-af91-4b04-8373-4aab01e82839.gif)
+![Game-app](https://user-images.githubusercontent.com/84847269/130223606-16322439-4a38-4811-8039-9c83d00ecbb0.gif)
 
 ## Live URL :-
 
-> [Game-App](https://shopping-cart-app-demo.vercel.app/)
+> [Game-App](https://game-of-life-demo1.vercel.app/)
 
 **OR your can do the following to run in your local machine**
 
