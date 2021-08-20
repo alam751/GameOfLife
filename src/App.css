@@ -11,6 +11,9 @@ body {
   text-align: center;
   letter-spacing: 2px;
 }
+
+/* start , stop , next button design */
+
 .btnContainer {
   display: flex;
   align-items: initial;
@@ -34,12 +37,18 @@ body {
   cursor: pointer;
   background: #b54507;
 }
+
+/* generation count design */
+
 .generationCount {
   margin-top: 10px;
   text-align: center;
   color: #b54507;
   font-weight: 1000;
 }
+
+/* grid and cell design */
+
 .container {
   display: flex;
   align-items: center;
@@ -51,6 +60,7 @@ body {
   border: 3px solid black;
   background: white;
   display: grid;
+  grid-template-columns: repeat(30, 20px);
   width: auto;
 }
 
@@ -59,6 +69,8 @@ body {
   height: 20px;
   border: 1px solid black;
 }
+
+/* game rules design */
 
 .footer {
   position: fixed;
@@ -69,7 +81,7 @@ body {
   background: #d65108;
   border-radius: 15px;
   width: 50%;
-  height: 300px;
+  height: 400px;
   padding: 25px 0;
   text-align: center;
 }
@@ -104,8 +116,8 @@ body {
 }
 .footer h3 {
   margin-top: 15px;
-  position: relative;
-  text-align: left;
+  /*position: absolute;*/
+  text-align: center;
   left: 60px;
 }
 .footer ol {
@@ -133,4 +145,43 @@ body {
 .rulesBtn:hover {
   cursor: pointer;
   color: #682806;
+}
+
+/* media screen */
+
+@media screen and (max-width: 700px) {
+  /* start , stop , next button design */
+
+  .btn {
+    margin: 5px 50px;
+  }
+  /* game rules design */
+  .footer {
+    overflow-y: scroll;
+  }
+  .footer ol {
+    position: absolute;
+    left: 40px;
+    text-align: left;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  /* grid design */
+  .box {
+    width: 330px;
+    grid-template-columns: repeat(30, 10px);
+  }
+}
+@media screen and (max-width: 560px) {
+  /* game rules design */
+
+  .rulesCloseBtn {
+    position: absolute;
+    right: 5px;
+    top: 8px;
+    background: white;
+    width: 30px;
+    height: 30px;
+  }
 }
