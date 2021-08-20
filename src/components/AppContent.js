@@ -10,8 +10,6 @@ const AppContent = () => {
   const [running, setRunning] = useState(null);
   const [count, setCount] = useState(0);
 
-  //let interval = null;
-
   useEffect(() => {
     let interval = null;
 
