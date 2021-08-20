@@ -22,6 +22,7 @@ const AppContent = () => {
       clearInterval(interval);
     }
     return () => clearInterval(interval);
+    // eslint-disable-next-line
   }, [running]);
 
   const nextGeneration = () => {
