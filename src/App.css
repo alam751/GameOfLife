@@ -4,12 +4,24 @@
   box-sizing: border-box;
 }
 body {
-  background: cornflowerblue;
+  background: #d3d3d3;
 }
 .heading {
   margin-top: 10px;
   text-align: center;
   letter-spacing: 2px;
+}
+
+.slidecontainer {
+  margin-top: 10px;
+  width: 100%;
+  text-align: center;
+}
+
+.delayTime {
+  margin: 10px 20px;
+  font-size: 20px;
+  font-weight: 600;
 }
 
 /* start , stop , next button design */
@@ -22,7 +34,7 @@ body {
   width: auto;
 }
 .btn {
-  margin: 5px 85px;
+  margin: 5px 10px;
   padding: 3px;
   width: 100px;
   border: none;
@@ -56,6 +68,7 @@ body {
 }
 .box {
   margin-top: 20px;
+  margin-bottom: 15px;
   padding: 5px;
   border: 3px solid black;
   background: white;
@@ -72,9 +85,9 @@ body {
 
 /* game rules design */
 
-.footer {
+.gamesRule {
   position: fixed;
-  top: 50%;
+  top: 70%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: #fff;
@@ -114,13 +127,13 @@ body {
   font-style: italic;
   font-weight: 600;
 }
-.footer h3 {
+.gamesRule h3 {
   margin-top: 15px;
   /*position: absolute;*/
   text-align: center;
   left: 60px;
 }
-.footer ol {
+.gamesRule ol {
   margin-top: 10px;
   position: absolute;
   left: 70px;
@@ -152,14 +165,19 @@ body {
 @media screen and (max-width: 700px) {
   /* start , stop , next button design */
 
+  .btnContainer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
   .btn {
-    margin: 5px 50px;
+    margin: 5px 5px;
   }
   /* game rules design */
-  .footer {
+  .gamesRule {
     overflow-y: scroll;
   }
-  .footer ol {
+  .gamesRule ol {
     position: absolute;
     left: 40px;
     text-align: left;

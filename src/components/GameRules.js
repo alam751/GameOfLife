@@ -9,7 +9,7 @@ const GameRules = () => {
 
   return (
     <>
-      <div className="footer" style={heading}>
+      <div className="gamesRule" style={heading}>
         <div>
           <button
             type="button"
@@ -23,6 +23,7 @@ const GameRules = () => {
         <div className="paragraph">
           <p> live-cell: blue-color</p>
           <p> Dead-cell: white-color</p>
+          <p>Delay Time is time between two consecutive turn.</p>
         </div>
 
         <h3>At each step in time (tick), the following transitions occur:</h3>

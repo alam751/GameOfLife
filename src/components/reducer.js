@@ -1,5 +1,6 @@
 export const reducer = (state, action) => {
   if (action.type === "RANDOM") {
+    console.log(action.payload);
     return {
       ...state,
       arr: action.payload,
