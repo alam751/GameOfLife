@@ -24,6 +24,10 @@ const GameRules = () => {
           <p> live-cell: blue-color</p>
           <p> Dead-cell: white-color</p>
           <p>Delay Time is time between two consecutive turn.</p>
+          <p>
+            You can also play by clicking on the small box after clicking clear
+            button.
+          </p>
         </div>
 
         <h3>At each step in time (tick), the following transitions occur:</h3>
