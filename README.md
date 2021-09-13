@@ -10,7 +10,7 @@
 
 ## Demo
 
-![Game-app](https://user-images.githubusercontent.com/84847269/131242952-ba533be3-f11f-4713-b88f-d2318460e40f.gif)
+![Conway's Game of Life](https://user-images.githubusercontent.com/84847269/133039548-16c01ce1-f201-4f69-a770-c64c1062f22f.gif)
 
 ## Live URL :-
 
