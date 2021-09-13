@@ -2,12 +2,8 @@ import React from "react";
 import "./App.css";
 import AppContent from "./components/AppContent";
 
-function App() {
-  return (
-    <>
-      <AppContent />
-    </>
-  );
-}
+const App = () => {
+  return <AppContent />;
+};
 
 export default App;
